@@ -1,0 +1,33 @@
+{
+  "name": "rocks-cli",
+  "version": "0.0.1",
+  "description": "Ton Rocks CLI - command line interface",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "pkg src/index.js --targets node12-linux-x64 --output rocks-cli && cp ./node_modules/ton-rocks-js/src/tvm/nodejs/tonclient.node ./"
+  },
+  "keywords": [
+    "TON",
+    "Telegram Open Network",
+    "Blockchain",
+    "CLI"
+  ],
+  "authors": [
+    {
+      "name": "Battlelore21",
+      "email": "Battlelore21@protonmail.com",
+      "url": "https://github.com/Battlelore21"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ton-rocks/rocks-cli/issues"
+  },
+  "homepage": "https://github.com/ton-rocks/rocks-cli#readme",
+  "repository": "https://github.com/ton-rocks/rocks-cli",
+  "dependencies": {
+    "ton-rocks-js": "https://github.com/ton-rocks/ton-rocks-js",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {}
+}
